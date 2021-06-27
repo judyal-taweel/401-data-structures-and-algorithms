@@ -5,4 +5,4 @@
 
 title | link to challenge readme | link to the code
 ------| -------------------------| ----------------
-array-reverse | challenges/array-reverse/README.md | ---
+array-reverse | [](challenges/array-reverse/README.md) | ---
