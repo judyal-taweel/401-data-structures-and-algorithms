@@ -4,7 +4,7 @@ in this challeng want to reverse an array
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](/raversearray.PNG)
+![](./raversearray.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
