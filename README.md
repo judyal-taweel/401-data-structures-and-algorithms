@@ -6,3 +6,4 @@
 title | link to challenge readme | link to the code
 ------| -------------------------| ----------------
 array-reverse | [array-reverse](challenges/array-reverse/README.md) | ---
+binary-search | [array-binary-search](challenges/array-binary-search/README.md) | ---
