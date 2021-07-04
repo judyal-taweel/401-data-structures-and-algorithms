@@ -2,7 +2,7 @@ package data;
 
 public class Nodes {
     private Nodes next;
-    private int data;
+    public int data;
 
 
     public Nodes(int data) {
