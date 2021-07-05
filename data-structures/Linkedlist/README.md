@@ -54,7 +54,7 @@ result: 60->70->5->80->null
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](../resources/returnnum.PNG)
+![](./Linkedlist/lib/src/main/resources/returnnum.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
