@@ -21,9 +21,9 @@ include: method takes value and return boolean if this value included in the lis
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\Linkedlist\lib\src\main\resources\appendLinkedlist.PNG)
-![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\Linkedlist\lib\src\main\resources\insertBefore.PNG)
-![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\Linkedlist\lib\src\main\resources\insertAfter.PNG)
+![](./resources/appendLinkedlist.PNG)
+![](./resources/insertAfter.PNG)
+![](./resources/insertBefore.PNG)
 
 
 ## Approach & Efficiency
@@ -54,7 +54,7 @@ result: 60->70->5->80->null
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\Linkedlist\lib\src\main\resources\returnnum.PNG)
+![](./resources/returnnum.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
