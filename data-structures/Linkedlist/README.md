@@ -49,6 +49,84 @@ result: 60->70->80->null
 
 result: 60->70->5->80->null
 
+# linked-list-kth Summary
+<!-- Description of the challenge -->
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\Linkedlist\lib\src\main\resources\returnnum.PNG)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+loop through linkedlist until from the end and return the node’s value that is `k` places
+
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+
+linked.append(60);
+linked.append(70);
+linked.append(80);
+System.oyt.println("the node is "+ linked.returnNum(2));
+System.oyt.println("the node is "+ linked.returnNum(4));
+System.oyt.println("the node is "+ linked.returnNum(-3));
+
+
+result: the node is 70
+result: the node is -1
+result: the node is 0
+
+# Test
+
+LinkedList linked = new LinkedList();
+@Test void kGreaterLength() {
+linked.insert(2);
+linked.append(4);
+linked.append(3);
+linked.append(5);
+int expect = -1 ;
+int x=  linked.returnNum(5);
+assertEquals(expect ,x);
+}
+
+@Test void kEqualLength(){
+linked.insert(2);
+linked.append(4);
+linked.append(3);
+linked.append(5);
+int expect = 2;
+int x=  linked.returnNum(4);
+assertEquals(expect,x);
+}
+
+@Test void negativeK(){
+linked.insert(2);
+linked.append(4);
+linked.append(3);
+linked.append(5);
+int expect = 0;
+int x=  linked.returnNum(-1);
+assertEquals(expect,x);
+}
+
+@Test void oneNode(){
+linked.insert(5);
+int expect = 5;
+int x=  linked.returnNum(1);
+assertEquals(expect,x);
+}
+
+@Test void happyPath(){
+linked.insert(2);
+linked.append(4);
+linked.append(9);
+linked.append(6);
+linked.append(8);
+int expect = 9;
+int x=  linked.returnNum(3);
+assertEquals(expect,x);
+}
+
 
 
 

@@ -17,31 +17,7 @@ public class LinkedList {
         }
     }
 
-    public void insertBefore(int ref, int value){
-        Nodes curr = this.head;
-        while (curr.getNext() != null){
-            if (curr.getNext().getData() == ref){
-                Nodes node = new Nodes(value);
-                node.setNext(curr.getNext());
-                curr.setNext(node);
-            }
-            curr=curr.getNext();
-        }
 
-    }
-
-    public void insertAfter(int ref , int value){
-        Nodes curr = this.head;
-        while (curr != null){
-            if (curr.getNext().getData() == ref){
-                Nodes node = new Nodes(value);
-                curr.setNext(node.getNext());
-                curr.setNext(node);
-            }
-            curr=curr.getNext();
-        }
-
-    }
 
     public void insert(int value){
         Nodes node = new Nodes(value);
@@ -74,6 +50,24 @@ public class LinkedList {
         result +="Null";
       return result;
 
+    }
+
+    public int returnNum (int k){
+        int len = 0;
+        Nodes curr =this.head;
+        while (curr!= null) {
+            curr= curr.getNext();
+            len++;
+        }
+        if (len < k){
+            return -1 ;
+        }else if (k<0){
+        return 0;
+        }
+        curr=this.head;
+        for (int i = 1; i < len - k + 1; i++)
+            curr= curr.getNext();
+        return curr.getData();
     }
 
 }
