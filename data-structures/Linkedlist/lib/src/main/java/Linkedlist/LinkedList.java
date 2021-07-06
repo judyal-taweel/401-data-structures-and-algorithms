@@ -1,6 +1,8 @@
 package Linkedlist;
 import data.Nodes;
 
+import java.util.List;
+
 public class LinkedList {
     private Nodes head = null;
 
@@ -70,6 +72,42 @@ public class LinkedList {
         return curr.getData();
     }
 
+
+    public LinkedList mergeTwoLists(LinkedList l1, LinkedList l2){
+        LinkedList l3 = new LinkedList();
+        if(l1 == null && l2 ==null){
+            return null;
+        }else if(l1 == null || l2 ==null){
+            return l1 ==null?l2:l1;
+        }else{
+            Nodes curr1 =l1.head;
+            Nodes curr2 =l2.head;
+            Nodes node1 = new Nodes(curr1.getData());
+            Nodes node2 = new Nodes(curr2.getData());
+            l3.head = node1;
+            Nodes curr3 = l3.head;
+
+            curr3.setNext(node2);
+            curr3=curr3.getNext();
+
+            System.out.println(curr1.getNext().getData());
+           while (curr1.getNext()!=null || curr2.getNext() !=null) {
+             if (curr1.getNext()!=null) {
+                 curr1=curr1.getNext();
+                 Nodes nodeList3 = new Nodes(curr1.getData());
+                 curr3.setNext(nodeList3);
+                 curr3 = curr3.getNext();
+             }
+             if (curr2.getNext()!=null){
+                 curr2=curr2.getNext();
+                 Nodes nodeList4 = new Nodes(curr2.getData());
+                 curr3.setNext(nodeList4);
+                 curr3 = curr3.getNext();
+             }
+           }
+        }
+        return l3;
+    }
 }
 
 
