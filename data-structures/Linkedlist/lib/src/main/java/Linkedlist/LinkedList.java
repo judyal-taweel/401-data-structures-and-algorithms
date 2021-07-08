@@ -21,7 +21,7 @@ public class LinkedList {
 
 
 
-    public void insert(int value){
+    public int insert(int value){
         Nodes node = new Nodes(value);
         if(this.head==null) {
             this.head=node;
@@ -30,6 +30,7 @@ public class LinkedList {
             node.setNext(current);
             this.head=node;
         }
+        return node.getData();
     }
     public boolean include(int value){
         Nodes current = this.head;
