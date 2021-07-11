@@ -26,11 +26,11 @@ public class Stack<T> {
         }
     }
 
-    public T getTop(){
+    public T peek(){
         return (T) head.getData();
     }
 
-    public void pop(){
+    public Object pop(){
 
         if(isEmpty()) {
             System.out.println("is empty");
@@ -40,11 +40,12 @@ public class Stack<T> {
             temp.setNext(null);
             size--;
         }
+        return null;
     }
 
     public void tostring(){
         while(size!=0){
-            System.out.print("{"+getTop()+"} ->");
+            System.out.print("{"+ peek()+"} ->");
             pop();
         }
         System.out.print("Null");
