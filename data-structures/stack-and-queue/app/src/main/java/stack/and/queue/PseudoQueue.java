@@ -23,7 +23,7 @@ public class PseudoQueue<T> {
             this.stack1.push(this.stack2.peek());
             this.stack2.pop() ;
         }
-        return extractData ;
+        return extractData;
     }
     public void tostring() {
         this.stack1.tostring();

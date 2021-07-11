@@ -31,7 +31,7 @@ public class App {
         sodo.enqueue(1);
         sodo.enqueue(2);
         sodo.enqueue(3);
-        sodo.dequeue();
+//        sodo.dequeue();
         sodo.tostring();
     }
 }

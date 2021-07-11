@@ -7,7 +7,7 @@ utilize 2 Stack instances to create and manage the queue
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\stack-and-queue\app\src\main\resources\queue-stack.PNG)
+![](queue-stack.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
