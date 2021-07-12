@@ -40,7 +40,7 @@ public class App {
         animal.enqueue(animal.getKind());
         animal.enqueue(animal1.getKind());
         animal.enqueue(animal2.getKind());
-        System.out.println( animal.deQueue("dog"));
+//        System.out.println( animal.deQueue("dog"));
         animal.tostring();
     }
 }

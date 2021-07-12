@@ -4,7 +4,6 @@ public class Animal<T> extends Queue {
     private String kind;
     Queue animalQ = new Queue();
 
-
     public Animal(String kind) {
         this.kind = kind;
     }
