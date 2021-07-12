@@ -27,11 +27,20 @@ public class App {
 //        queue.tostring();
 
 
-        PseudoQueue sodo = new PseudoQueue();
-        sodo.enqueue(1);
-        sodo.enqueue(2);
-        sodo.enqueue(3);
-//        sodo.dequeue();
-        sodo.tostring();
+//        PseudoQueue sodo = new PseudoQueue();
+//        sodo.enqueue(1);
+//        sodo.enqueue(2);
+//        sodo.enqueue(3);
+////        sodo.dequeue();
+//        sodo.tostring();
+
+        Animal animal = new Animal("cat");
+        Animal animal1 = new Animal("dog");
+        Animal animal2 = new Animal("monkey");
+        animal.enqueue(animal.getKind());
+        animal.enqueue(animal1.getKind());
+        animal.enqueue(animal2.getKind());
+        System.out.println( animal.deQueue("dog"));
+        animal.tostring();
     }
 }

@@ -3,8 +3,19 @@
  */
 package stack.and.queue;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class AppTest {
+
+    @Test public void testEnQueue(){
+        Animal animal = new Animal("cat");
+        animal.enqueue(animal.getKind());
+        Assertions.assertEquals("cat",animal.getKind());
+    }
+    @Test public void testdeQueue(){
+        Animal animal = new Animal("dog");
+        Assertions.assertEquals("pref is dog",animal.deQueue("dog"));
+    }
 
 }
