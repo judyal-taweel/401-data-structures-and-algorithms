@@ -38,4 +38,24 @@ System.out.println( animal.deQueue("dog"));
 Result: {cat} ->Null
 
 
+# Test:
+
+@Test public void testEnQueue(){
+
+Animal animal = new Animal("cat");
+
+animal.enqueue(animal.getKind());
+
+Assertions.assertEquals("cat",animal.getKind());
+
+}
+
+@Test public void testdeQueue(){
+
+Animal animal = new Animal("dog");
+
+Assertions.assertEquals("pref is dog",animal.deQueue("dog"));
+
+}
+
 
