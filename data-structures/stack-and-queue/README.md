@@ -1,45 +1,61 @@
 # Challenge Summary
 <!-- Description of the challenge -->
-Create a new class called pseudo queue.
-Do not use an existing Queue.
-Instead, this PseudoQueue class will implement our standard queue interface
-utilize 2 Stack instances to create and manage the queue
+
+Create a class called AnimalShelter which holds only dogs and cats.
+The shelter operates using a first-in, first-out approach.
+
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](queue-stack.PNG)
+![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\stack-and-queue\app\src\main\java\stack\and\queue\Animals.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-- utilize 2 Stack instances to create and manage the queue(stack1,stack2).
-- create enqueue method take an argument use to push a new node to stack1.
-- create dequeue method .
-- if stack1 is empty will return exception.
-  if stack1 does not empty will do loop to push the top from stack1 to stack2 and do pop for each top in stack1.
-- then after finish of push all nodes from stack1 to stack2 will define extractData to do pop for stack2.
-- then if stack2 does not empty will do loop to push the top from stack2 to stack1 and do pop for each top in stack2.
-- return extractData.
+space: O(1)
+time: O(1)
+
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
-### enqueue:
+enqueue:
 
-PseudoQueue sodo = new PseudoQueue();
+Animal animal = new Animal("cat");
 
-sodo.enqueue(1);
+Animal animal1 = new Animal("dog");
 
-sodo.enqueue(2);
+Animal animal2 = new Animal("monkey");
 
-sodo.enqueue(3);
+animal.enqueue(animal.getKind());
+animal.enqueue(animal1.getKind());
+animal.enqueue(animal2.getKind());
 
-sodo.tostring();
+Result: {cat} ->{dog} ->Null
 
-Result: {3} ->{2} ->{1} ->Null
+dequeue: 
+
+System.out.println( animal.deQueue("dog"));
+
+Result: {cat} ->Null
 
 
-### dequeue:
+# Test:
 
-sodo.dequeue();
+@Test public void testEnQueue(){
 
-Result: {3} ->{2} ->Null
+Animal animal = new Animal("cat");
+
+animal.enqueue(animal.getKind());
+
+Assertions.assertEquals("cat",animal.getKind());
+
+}
+
+@Test public void testdeQueue(){
+
+Animal animal = new Animal("dog");
+
+Assertions.assertEquals("pref is dog",animal.deQueue("dog"));
+
+}
+
 
