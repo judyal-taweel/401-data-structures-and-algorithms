@@ -34,13 +34,17 @@ public class App {
 ////        sodo.dequeue();
 //        sodo.tostring();
 
-        Animal animal = new Animal("cat");
-        Animal animal1 = new Animal("dog");
-        Animal animal2 = new Animal("monkey");
-        animal.enqueue(animal.getKind());
-        animal.enqueue(animal1.getKind());
-        animal.enqueue(animal2.getKind());
+//        Animal animal = new Animal("cat");
+//        Animal animal1 = new Animal("dog");
+//        Animal animal2 = new Animal("monkey");
+//        animal.enqueue(animal.getKind());
+//        animal.enqueue(animal1.getKind());
+//        animal.enqueue(animal2.getKind());
 //        System.out.println( animal.deQueue("dog"));
-        animal.tostring();
+//        animal.tostring();
+
+
+        ValidateBrackets brackets = new ValidateBrackets();
+        System.out.println(brackets.correctBrackets("{{"));
     }
 }
