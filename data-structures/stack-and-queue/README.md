@@ -1,61 +1,34 @@
 # Challenge Summary
 <!-- Description of the challenge -->
-
-Create a class called AnimalShelter which holds only dogs and cats.
-The shelter operates using a first-in, first-out approach.
+create function called validate brackets with string argument and Return boolean
+representing whether or not the brackets in the string are balanced
 
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\stack-and-queue\app\src\main\java\stack\and\queue\Animals.PNG)
+![](C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\data-structures\stack-and-queue\app\src\main\java\stack\and\queue\brackets.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-space: O(1)
-time: O(1)
+Time: O(n)
+Space: O(n)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
-enqueue:
+brackets.correctBrackets("{{")
 
-Animal animal = new Animal("cat");
+result: false
 
-Animal animal1 = new Animal("dog");
+brackets.correctBrackets("{{}}")
 
-Animal animal2 = new Animal("monkey");
+result: true
 
-animal.enqueue(animal.getKind());
-animal.enqueue(animal1.getKind());
-animal.enqueue(animal2.getKind());
+brackets.correctBrackets("")
 
-Result: {cat} ->{dog} ->Null
+result: true
 
-dequeue: 
+brackets.correctBrackets("{(]}")
 
-System.out.println( animal.deQueue("dog"));
-
-Result: {cat} ->Null
-
-
-# Test:
-
-@Test public void testEnQueue(){
-
-Animal animal = new Animal("cat");
-
-animal.enqueue(animal.getKind());
-
-Assertions.assertEquals("cat",animal.getKind());
-
-}
-
-@Test public void testdeQueue(){
-
-Animal animal = new Animal("dog");
-
-Assertions.assertEquals("pref is dog",animal.deQueue("dog"));
-
-}
-
+result: false
 
