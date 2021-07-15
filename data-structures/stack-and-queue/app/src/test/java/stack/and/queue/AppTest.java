@@ -8,14 +8,19 @@ import org.junit.jupiter.api.Test;
 
 class AppTest {
 
-    @Test public void testEnQueue(){
-        Animal animal = new Animal("cat");
-        animal.enqueue(animal.getKind());
-        Assertions.assertEquals("cat",animal.getKind());
-    }
-    @Test public void testdeQueue(){
-        Animal animal = new Animal("dog");
-        Assertions.assertEquals("pref is dog",animal.deQueue("dog"));
+    @Test
+    public void testAnimalShelterDequeue() {
+        AnimalShelter animalShelter = new AnimalShelter();
+        Dog dog1 = new Dog("Scooby");
+        animalShelter.enqueue(dog1);
+        Cat cat2 = new Cat("Garfield");
+        animalShelter.enqueue(cat2);
+        Cat cat3 = new Cat("HelloKitty");
+        animalShelter.enqueue(cat3);
+        Dog dog4 = new Dog("Scrappy");
+        animalShelter.enqueue(dog4);
+        Assertions.assertEquals(dog1.getName(), animalShelter.dequeue("dog").getName());
+        Assertions.assertEquals(dog4.getName(), animalShelter.dequeue("dog").getName());
     }
 
 }
