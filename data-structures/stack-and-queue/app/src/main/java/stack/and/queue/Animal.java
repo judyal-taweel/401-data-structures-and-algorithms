@@ -1,39 +1,18 @@
 package stack.and.queue;
 
-public class Animal<T> extends Queue {
-    private String kind;
-    Queue animalQ = new Queue();
+public class Animal {
 
-    public Animal(String kind) {
-        this.kind = kind;
+    private String name;
+
+    public Animal(String name){
+        this.name=name;
     }
 
-    public String getKind() {
-        return kind;
+    public String getName() {
+        return name;
     }
-    public void enqueue(String animal){
-        animal.toLowerCase();
-        if(animal =="cat" || animal=="dog"){
-            animalQ.enQueue(animal);
-            System.out.println(animal);
-        }
-        else {
-            System.out.println("sorry we just receive dogs or cats");
-        }
-    }
-    public String deQueue(String pref){
-        pref.toLowerCase();
-        if(pref =="cat"){
-            animalQ.deQueue();
-            return "pref is cat";
-        }
-        else if (pref == "dog"){
-            animalQ.deQueue();
-            return "pref is dog";
-        }
-        return null;
-    }
-    public void tostring() {
-        animalQ.tostring();
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
