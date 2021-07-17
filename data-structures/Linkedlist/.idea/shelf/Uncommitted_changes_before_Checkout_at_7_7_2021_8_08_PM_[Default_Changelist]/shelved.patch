@@ -1,0 +1,85 @@
+Index: lib/src/main/java/Linkedlist/LinkedList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Linkedlist;\r\nimport data.Nodes;\r\n\r\nimport java.util.List;\r\n\r\npublic class LinkedList {\r\n    private Nodes head = null;\r\n\r\n    public void append(int value){\r\n        Nodes node=new Nodes(value);\r\n        if(this.head == null){\r\n            this.head=node;\r\n        }else{\r\n            Nodes curr=this.head;\r\n            while (curr.getNext() != null){\r\n                curr=curr.getNext();\r\n            }\r\n            curr.setNext(node);\r\n        }\r\n    }\r\n\r\n\r\n\r\n    public void insert(int value){\r\n        Nodes node = new Nodes(value);\r\n        if(this.head==null) {\r\n            this.head=node;\r\n        }else{\r\n            Nodes current = this.head;\r\n            node.setNext(current);\r\n            this.head=node;\r\n        }\r\n    }\r\n    public boolean include(int value){\r\n        Nodes current = this.head;\r\n        while (current.getNext() != null){\r\n            if(current.getData() == value){\r\n                return true;\r\n            }\r\n            current=current.getNext();\r\n        }\r\n        return false;\r\n    }\r\n    @Override\r\n    public String toString(){\r\n      String result = \"\";\r\n      Nodes current = this.head;\r\n      while (current != null) {\r\n          result += \"{\" + current.getData() + \"} ->\";\r\n          current = current.getNext();\r\n      }\r\n        result +=\"Null\";\r\n      return result;\r\n\r\n    }\r\n\r\n    public int returnNum (int k){\r\n        int len = 0;\r\n        Nodes curr =this.head;\r\n        while (curr!= null) {\r\n            curr= curr.getNext();\r\n            len++;\r\n        }\r\n        if (len < k){\r\n            return -1 ;\r\n        }else if (k<0){\r\n        return 0;\r\n        }\r\n        curr=this.head;\r\n        for (int i = 1; i < len - k + 1; i++)\r\n            curr= curr.getNext();\r\n        return curr.getData();\r\n    }\r\n\r\n\r\n    public LinkedList mergeTwoLists(LinkedList l1, LinkedList l2){\r\n        LinkedList l3 = new LinkedList();\r\n        if(l1 == null && l2 ==null){\r\n            return null;\r\n        }else if(l1 == null || l2 ==null){\r\n            return l1 ==null?l2:l1;\r\n        }else{\r\n            Nodes curr1 =l1.head;\r\n            Nodes curr2 =l2.head;\r\n            Nodes node1 = new Nodes(curr1.getData());\r\n            Nodes node2 = new Nodes(curr2.getData());\r\n            l3.head = node1;\r\n            Nodes curr3 = l3.head;\r\n\r\n            curr3.setNext(node2);\r\n            curr3=curr3.getNext();\r\n\r\n            System.out.println(curr1.getNext().getData());\r\n           while (curr1.getNext()!=null || curr2.getNext() !=null) {\r\n             if (curr1.getNext()!=null) {\r\n                 curr1=curr1.getNext();\r\n                 Nodes nodeList3 = new Nodes(curr1.getData());\r\n                 curr3.setNext(nodeList3);\r\n                 curr3 = curr3.getNext();\r\n             }\r\n             if (curr2.getNext()!=null){\r\n                 curr2=curr2.getNext();\r\n                 Nodes nodeList4 = new Nodes(curr2.getData());\r\n                 curr3.setNext(nodeList4);\r\n                 curr3 = curr3.getNext();\r\n             }\r\n           }\r\n        }\r\n        return l3;\r\n    }\r\n}\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/src/main/java/Linkedlist/LinkedList.java b/lib/src/main/java/Linkedlist/LinkedList.java
+--- a/lib/src/main/java/Linkedlist/LinkedList.java	
++++ b/lib/src/main/java/Linkedlist/LinkedList.java	
+@@ -1,10 +1,9 @@
+ package Linkedlist;
+ import data.Nodes;
+ 
+-import java.util.List;
+-
+ public class LinkedList {
+     private Nodes head = null;
++    int length =0;
+ 
+     public void append(int value){
+         Nodes node=new Nodes(value);
+@@ -17,7 +16,23 @@
+             }
+             curr.setNext(node);
+         }
++        length++;
+     }
++//    public void reverse() {
++//        Nodes first = head;
++//        Nodes tail = head;
++//        Nodes second = first.getNext();
++//        for (int i = 0; i < length - 1; i++) {
++//            Nodes temp = second.getNext();
++//            second.setNext(first);
++//            first = second;
++//            second = temp;
++//        }
++//        head.setNext(null);
++//        head = first;
++//    }
++
++
+ 
+ 
+ 
+@@ -30,6 +45,7 @@
+             node.setNext(current);
+             this.head=node;
+         }
++        length++;
+     }
+     public boolean include(int value){
+         Nodes current = this.head;
+@@ -108,6 +124,30 @@
+         }
+         return l3;
+     }
++
++    public LinkedList reverse() {
++        LinkedList reversedList = new LinkedList();
++        Nodes current = head;
++        while (current != null){
++            reversedList.insert(current.getData());
++            current = current.getNext();
++        }
++        return reversedList;
++    }
++    public boolean palindrome(){
++        Nodes current = head;
++        LinkedList reversedList = reverse();
++        Nodes currentRev = reversedList.head;
++        while (current!=null){
++            if (current.getData() !=currentRev.getData()){
++                  return false;
++            }else{
++                current=current.getNext();
++                currentRev=currentRev.getNext();
++            }
++        }
++        return true;
++    }
+ }
+ 
+ 
