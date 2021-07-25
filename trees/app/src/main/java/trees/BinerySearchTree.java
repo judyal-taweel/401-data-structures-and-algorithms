@@ -33,10 +33,6 @@ public class BinerySearchTree extends BineryTree {
         return getLeft();
     }
 
-
-
-
-
     public void traversal(Node current,int key){
         if(key>current.getKey()) {
             if (current.getRight()==null){
@@ -73,6 +69,9 @@ public  Node searchBT(Node current,int key){
 
         return searchBT(current.getRight(),key);
 }
+
+
+
 }
 
 
