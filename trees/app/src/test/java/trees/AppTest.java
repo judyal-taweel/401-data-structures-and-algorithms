@@ -66,5 +66,12 @@ class AppTest {
         arrayList.add(bineryTree.arrayListPreOrder);
         assertEquals("[[1, 2, 3]]",arrayList.toString());
     }
+   @Test
+    public void testMax(){
+       bineryTree.setRoot(new Node(1));
+       bineryTree.getRoot().setLeft(new Node(2));
+       bineryTree.getRoot().setRight(new Node(3));
+       assertEquals(3,bineryTree.findMax());
+   }
 
 }
