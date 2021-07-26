@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f137b84-ce4f-4456-bb0b-9c9e9de4c489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/challeng16.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readmeMax.md" afterDir="false" />
+    <list default="true" id="8f137b84-ce4f-4456-bb0b-9c9e9de4c489" name="Default Changelist" comment="challenge 16">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Data2/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/trees/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/breadthFirst.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenge17.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Data/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Data/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/BinerySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/BinerySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/BineryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/BineryTree.java" afterDir="false" />
@@ -43,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="trees" />
+        <entry key="$PROJECT_DIR$/.." value="tree-max" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -57,17 +61,29 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.testMax">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees\app\src\main\java" />
+      <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees\app\src\main\java\trees" />
+      <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees\app\src\main\Queue" />
+      <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees\app\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="trees.App" />
       <module name="trees.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="trees.*" />
+          <option name="PATTERN" value="Data2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +102,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testInOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;trees.AppTest.testInOrder&quot;" />
+        <option name="scriptParameters" value="--tests &quot;trees.AppTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.breadthFirstValuesInTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;trees.AppTest.breadthFirstValuesInTreeTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -113,27 +150,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;trees.AppTest.testMax&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AppTest.testPostOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;trees.AppTest.testPostOrder&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -172,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest" />
+        <item itemvalue="Gradle.AppTest.breadthFirstValuesInTreeTest" />
         <item itemvalue="Gradle.AppTest.testMax" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.AppTest.testPreOrder" />
-        <item itemvalue="Gradle.AppTest.testPostOrder" />
-        <item itemvalue="Gradle.AppTest.testInOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -192,8 +208,18 @@
       <workItem from="1626617951919" duration="12911000" />
       <workItem from="1627052377504" duration="2370000" />
       <workItem from="1627060189054" duration="679000" />
-      <workItem from="1627232568825" duration="7026000" />
+      <workItem from="1627232568825" duration="7669000" />
+      <workItem from="1627320641812" duration="6280000" />
+      <workItem from="1627331945197" duration="343000" />
     </task>
+    <task id="LOCAL-00001" summary="challenge 16">
+      <created>1627240175285</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627240175286</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,5 +236,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="challenge 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="challenge 16" />
   </component>
 </project>
