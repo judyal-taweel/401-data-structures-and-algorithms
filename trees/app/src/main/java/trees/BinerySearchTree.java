@@ -2,9 +2,9 @@ package trees;
 
 import Data.Node;
 
-public class BinerySearchTree extends BineryTree {
+public class BinerySearchTree<T> extends BineryTree {
 
-    private Node root;
+    private Node<T> root;
 
 //    public void isEmpty(){
 //        if (root == null){
@@ -15,9 +15,9 @@ public class BinerySearchTree extends BineryTree {
 
     public void add(int key){
         if(root == null){
-            root= new Node(key);
+            root= new Node<T>(key);
         }else{
-            Node current= root;
+            Node<T> current= root;
                 traversal(current,key);
             }
         }
@@ -33,16 +33,16 @@ public class BinerySearchTree extends BineryTree {
         return getLeft();
     }
 
-    public void traversal(Node current,int key){
+    public void traversal(Node<T> current, int key){
         if(key>current.getKey()) {
             if (current.getRight()==null){
-                current.setRight(new Node(key));
+                current.setRight(new Node<T>(key));
                 return;
             }
             current=current.getRight();
         }else{
             if(current.getLeft()==null){
-            current.setLeft(new Node(key));
+            current.setLeft(new Node<T>(key));
             return;
 
         }
@@ -53,7 +53,7 @@ public class BinerySearchTree extends BineryTree {
 
 
     public boolean contains(int key){
-        Node current = root;
+        Node<T> current = root;
         current = searchBT(current,key);
         if(current!=null)
             return true;
@@ -61,7 +61,7 @@ public class BinerySearchTree extends BineryTree {
             return false;
     }
 
-public  Node searchBT(Node current,int key){
+public  Node<T> searchBT(Node<T> current, int key){
         if(current==null|| current.getKey()==key)
             return current;
         if (current.getKey()>key)

@@ -5,29 +5,26 @@ package trees;
 
 import Data.Node;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static <T> void main(String[] args) {
         System.out.println(new App().getGreeting());
 
         BineryTree tree = new BineryTree();
-        tree.setRoot(new Node(2));
-        tree.getRoot().setLeft(new Node(7));
-        tree.getRoot().setRight(new Node(5));
-        tree.getRoot().getLeft().setRight(new Node(6));
-        tree.getRoot().getLeft().getRight().setLeft( new Node(1));
-        tree.getRoot().getLeft().getRight().setRight(new Node(11));
-        tree.getRoot().getRight().setRight(new Node(9));
-        tree.getRoot().getRight().getRight().setLeft(new Node(4));
+        tree.setRoot(new Node<T>(2));
+        tree.getRoot().setLeft(new Node<T>(7));
+        tree.getRoot().setRight(new Node<T>(5));
+        tree.getRoot().getLeft().setRight(new Node<T>(6));
+        tree.getRoot().getLeft().getRight().setLeft( new Node<T>(1));
+        tree.getRoot().getLeft().getRight().setRight(new Node<T>(11));
+        tree.getRoot().getRight().setRight(new Node<T>(9));
+        tree.getRoot().getRight().getRight().setLeft(new Node<T>(4));
 
 
-        System.out.println("Maximum element is "+ tree.findMax());
+        System.out.println("Maximum element is "+ tree.breadthFirst(tree));
 
 //        BinerySearchTree binerySearchTree= new BinerySearchTree();
 //
