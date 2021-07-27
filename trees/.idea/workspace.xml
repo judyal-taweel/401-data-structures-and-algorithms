@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f137b84-ce4f-4456-bb0b-9c9e9de4c489" name="Default Changelist" comment="challenge 16">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/Data2/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/trees/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/breadthFirst.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/challenge17.PNG" afterDir="false" />
+    <list default="true" id="8f137b84-ce4f-4456-bb0b-9c9e9de4c489" name="Default Changelist" comment="challenge 17">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/trees.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FizzBuzz.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenge18.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/Data/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Data/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/BinerySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/BinerySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/BineryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/BineryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/trees/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/trees/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +53,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/Data/Node.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/trees/BineryTree.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/trees/App.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/trees/Queue.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/trees/BinerySearchTree.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/test/java/trees/AppTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1vUM5vBinca4nGDoqF3EC7CInM8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -68,8 +77,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees\app\src\main\java" />
       <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees" />
+      <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees\app\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\Documents\challenges\401-data-structures-and-algorithms\trees\app\src\main\java\trees" />
@@ -87,17 +96,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,7 +208,8 @@
       <workItem from="1627060189054" duration="679000" />
       <workItem from="1627232568825" duration="7669000" />
       <workItem from="1627320641812" duration="6280000" />
-      <workItem from="1627331945197" duration="343000" />
+      <workItem from="1627331945197" duration="1875000" />
+      <workItem from="1627377678085" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="challenge 16">
       <created>1627240175285</created>
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627240175286</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="challenge 17">
+      <created>1627332318842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627332318842</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +245,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="challenge 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="challenge 16" />
+    <MESSAGE value="challenge 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="challenge 17" />
   </component>
 </project>

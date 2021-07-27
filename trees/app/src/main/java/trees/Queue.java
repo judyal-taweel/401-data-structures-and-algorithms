@@ -53,4 +53,17 @@ public class Queue<T> {
         System.out.println();
 
     }
+
+    public String toString() {
+        Node<T> current = front;
+        if (current.getData() == null) {
+            return "Tree is empty";
+        }
+        StringBuilder showList = new StringBuilder();
+        while (current != null) {
+            showList.append("{").append(current.getData()).append("}-> ");
+            current = current.getNext();
+        }
+        return showList.toString();
+    }
 }
