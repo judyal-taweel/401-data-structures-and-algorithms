@@ -5,7 +5,7 @@ package trees;
 
 import Data.Node;
 
-public class App {
+public class App<T> {
     public String getGreeting() {
         return "Hello World!";
     }
@@ -13,18 +13,29 @@ public class App {
     public static <T> void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-        BineryTree tree = new BineryTree();
-        tree.setRoot(new Node<T>(2));
-        tree.getRoot().setLeft(new Node<T>(7));
-        tree.getRoot().setRight(new Node<T>(5));
-        tree.getRoot().getLeft().setRight(new Node<T>(6));
-        tree.getRoot().getLeft().getRight().setLeft( new Node<T>(1));
-        tree.getRoot().getLeft().getRight().setRight(new Node<T>(11));
-        tree.getRoot().getRight().setRight(new Node<T>(9));
-        tree.getRoot().getRight().getRight().setLeft(new Node<T>(4));
+
+        BineryTree<Integer> binaryTree = new BineryTree();
+
+        binaryTree.setRoot(new Node<>(1));
+        binaryTree.getRoot().setLeft(new Node<>(5));
+        binaryTree.getRoot().setRight(new Node<>(3));
+        binaryTree.getRoot().getLeft().setLeft(new Node<>(4));
 
 
-        System.out.println("Maximum element is "+ tree.breadthFirst(tree));
+        System.out.println(binaryTree.fizzBuzz(binaryTree).print());
+
+//        tree.setRoot(new Node<Integer>(2));
+//        tree.getRoot().setLeft(new Node<Integer>(7));
+//        tree.getRoot().setRight(new Node<Integer>(5));
+//        tree.getRoot().getLeft().setRight(new Node<Integer>(6));
+//        tree.getRoot().getLeft().getRight().setLeft( new Node<Integer>(1));
+//        tree.getRoot().getLeft().getRight().setRight(new Node<Integer>(11));
+//        tree.getRoot().getRight().setRight(new Node<Integer>(9));
+//        tree.getRoot().getRight().getRight().setLeft(new Node<Integer>(4));
+//
+//        System.out.println(tree.fizzBuzz(tree).toString());
+
+//        System.out.println("Maximum element is "+ tree.breadthFirst(tree));
 
 //        BinerySearchTree binerySearchTree= new BinerySearchTree();
 //

@@ -17,17 +17,17 @@ class AppTest {
     }
 
     BinerySearchTree binerySearchTree= new BinerySearchTree();
-    @Test
-    public void testEmpty(){
-        binerySearchTree.add(2);
-        assertNotNull(binerySearchTree);
-    }
-    @Test
-    public void testAdd(){
-        binerySearchTree.add(2);
-    assertEquals(2,binerySearchTree.getRootKey());
-    }
- BineryTree bineryTree= new BineryTree();
+//    @Test
+//    public void testEmpty(){
+//        binerySearchTree.add(2);
+//        assertNotNull(binerySearchTree);
+//    }
+//    @Test
+//    public void testAdd(){
+//        binerySearchTree.add(2);
+//    assertEquals(2,binerySearchTree.getRootKey());
+//    }
+// BineryTree bineryTree= new BineryTree();
 //    @Test
 //    public void testAddLeftRght(){
 //        bineryTree.setRoot(new Node<T>(1));
@@ -73,17 +73,17 @@ class AppTest {
 //       bineryTree.getRoot().setRight(new Node<T>(3));
 //       assertEquals(3,bineryTree.findMax());
 //   }
-BineryTree binaryTreeTest = new BineryTree();
+//BineryTree binaryTreeTest = new BineryTree();
 
-    @Test
-    public void breadthFirstValuesInTreeTest(){
-
-        binaryTreeTest.setRoot(new Node(1));
-        binaryTreeTest.getRoot().setLeft(new Node(2));
-        binaryTreeTest.getRoot().setRight(new Node(3));
-        binaryTreeTest.getRoot().getLeft().setLeft(new Node(4));
-        binaryTreeTest.getRoot().getLeft().getLeft().setLeft(new Node(5));
-        binaryTreeTest.getRoot().getRight().setLeft(new Node(6));
-        assertEquals("[1, 2, 3, 4, 6, 5]",binaryTreeTest.breadthFirst(binaryTreeTest).toString());
-    }
+//    @Test
+//    public void breadthFirstValuesInTreeTest(){
+//
+//        binaryTreeTest.setRoot(new Node(1));
+//        binaryTreeTest.getRoot().setLeft(new Node(2));
+//        binaryTreeTest.getRoot().setRight(new Node(3));
+//        binaryTreeTest.getRoot().getLeft().setLeft(new Node(4));
+//        binaryTreeTest.getRoot().getLeft().getLeft().setLeft(new Node(5));
+//        binaryTreeTest.getRoot().getRight().setLeft(new Node(6));
+//        assertEquals("[1, 2, 3, 4, 6, 5]",binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+//    }
 }

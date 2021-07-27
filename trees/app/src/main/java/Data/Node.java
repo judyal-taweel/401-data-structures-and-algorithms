@@ -1,15 +1,23 @@
 package Data;
 
 public class Node<T> {
-    private final int key;
+    private  T key;
     private Node<T> left;
     private Node<T> right;
 
-    public Node(int key) {
+    public Node() {
+
+    }
+
+    public void setKey(T key) {
         this.key = key;
     }
 
-    public int getKey() {
+    public Node(T key) {
+        this.key = key;
+    }
+
+    public T getKey() {
         return key;
     }
 
